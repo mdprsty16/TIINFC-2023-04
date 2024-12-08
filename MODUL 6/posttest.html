@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST TEST</title>
+    <script src="JS/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#ubah').on('click', function () {
+
+                $('#fakultas').text('Fakultas Ilmu Komputer');
+
+                $('#universitas').val('Universitas Kuningan');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="fakultas">fkom</div>
+    <input type="text" id="universitas" value="uniku">
+
+    <button id="ubah">Ubah</button>
+</body>
+</html>

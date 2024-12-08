@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Test</title>
+    <script src="JS/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".tampil").hide();
+
+            $(".sembunyi").click(function() {
+                $(".img").hide("slow");
+                $(".tampil").show();
+                $(".sembunyi").hide();
+            });
+            $(".tampil").click(function() {
+                $(".img").show("slow");
+                $(".tampil").show();
+                $(".sembunyi").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="sembunyi">HIDE</button>
+    <button class="tampil">SHOW</button>
+    <ul>
+    <img class="img" img src="img/hoshinova.jpg" style="width: 150px;"></img>
+    </ul>
+</body>
+</html>
