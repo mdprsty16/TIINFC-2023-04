@@ -14,7 +14,7 @@
 
 @media (min-width: 992px) {
     .nav-link {
-        font-size: 24px;
+        font-size: 17px;
         margin-right: 30px;
     }
 }
@@ -34,12 +34,9 @@
     display: block;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 .navbar {
     background-color: black !important; 
+    padding: 1px;
 }
 
 .navbar .nav-link,
@@ -85,7 +82,8 @@
 
 .box iframe {
     width: 100%;        
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    height: 205px; 
 }
 
 iframe {
@@ -95,6 +93,10 @@ iframe {
 img {
     border: 2px solid #ddd;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
   
-
+img:hover {
+    transform: scale(1.05); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+}

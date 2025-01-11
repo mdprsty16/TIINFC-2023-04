@@ -1,5 +1,5 @@
 function handleLogin(event) {
-    event.preventDefault(); // Mencegah reload halaman
+    event.preventDefault(); 
     
     // Ambil nilai input
     const username = document.getElementById('username').value;
@@ -13,7 +13,7 @@ function handleLogin(event) {
         
         // Pindah halaman setelah 2 detik
         setTimeout(() => {
-            window.location.href = "../html/main.html";
+            window.location.href = "../html/mainAdmin.html";
         }, 2000);
     } else {
         alert('Username atau Password salah!');
